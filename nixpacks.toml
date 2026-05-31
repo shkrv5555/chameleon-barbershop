@@ -1,0 +1,13 @@
+[phases.install]
+cmds = [
+  "npm install --prefix chamilion-backend",
+  "npm install --prefix chamilion-frontend"
+]
+
+[phases.build]
+cmds = [
+  "npm run build --prefix chamilion-frontend"
+]
+
+[start]
+cmd = "node chamilion-backend/server.js"

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+chamilion-backend/node_modules/
+chamilion-frontend/node_modules/
+
+# Build output
+chamilion-frontend/dist/
+chamilion-backend/public/
+
+# Environment (secrets — add manually on Railway)
+chamilion-backend/.env
+
+# Database (Railway has ephemeral filesystem — data resets on redeploy)
+chamilion-backend/data/
+
+# Claude Code
+.claude/
+
+# Images / uploads (not part of source)
+*.jpeg
+*.jpg
+*.png
+*.gif
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
