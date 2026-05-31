@@ -28,7 +28,7 @@ function PostCard({ post, index }) {
           }}>
             <BookOpen size={20} color="#C8A96E" />
           </div>
-          <h3 style={{ fontFamily: 'Cinzel,serif', fontSize: '1rem', color: '#18181E', marginBottom: 10, lineHeight: 1.4 }}>{post.title}</h3>
+          <h3 style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, fontSize: '1rem', color: '#18181E', marginBottom: 10, lineHeight: 1.4 }}>{post.title}</h3>
           <p style={{ color: '#6A6B75', fontSize: '0.85rem', lineHeight: 1.65, marginBottom: 20 }}>{post.excerpt}</p>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 'auto' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#9A9BA3', fontSize: '0.75rem' }}>

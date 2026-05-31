@@ -35,7 +35,7 @@ function ServiceCard({ service, index }) {
         <Icon size={22} color="#C8A96E" />
       </div>
       <div>
-        <h3 style={{ fontFamily: 'Cinzel,serif', fontSize: '1.05rem', color: '#18181E', marginBottom: 6 }}>{service.name}</h3>
+        <h3 style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, fontSize: '1.05rem', color: '#18181E', marginBottom: 6 }}>{service.name}</h3>
         <p style={{ color: '#6A6B75', fontSize: '0.85rem', lineHeight: 1.6 }}>{service.description}</p>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', marginTop: 'auto', paddingTop: 16, borderTop: '1px solid rgba(100,101,110,0.15)' }}>
@@ -79,7 +79,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          style={{ fontFamily: 'Cinzel,serif', fontSize: 'clamp(1.8rem,5vw,3rem)', color: '#F4F4F8', marginBottom: 16 }}
+          style={{ fontFamily: 'Cormorant Garamond,serif', fontWeight: 700, fontSize: 'clamp(1.8rem,5vw,3rem)', color: '#F4F4F8', marginBottom: 16 }}
         >
           Xidmətlərimiz
         </motion.h1>

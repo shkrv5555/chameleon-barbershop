@@ -121,7 +121,7 @@ function Modal({ open, onClose, title, children }) {
             onClick={e => e.stopPropagation()}
           >
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 22 }}>
-              <h3 style={{ fontFamily: "'Cinzel',serif", fontSize: '1rem', color: '#C8A96E', letterSpacing: '0.06em' }}>{title}</h3>
+              <h3 style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 700, fontSize: '1rem', color: '#C8A96E', letterSpacing: '0.06em' }}>{title}</h3>
               <button onClick={onClose} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'rgba(244,244,248,0.5)' }}><X size={18} /></button>
             </div>
             {children}
@@ -171,7 +171,7 @@ function LoginView({ onLogin }) {
             </button>
           </div>
           <button type="submit" disabled={loading || !pw}
-            style={{ padding: '12px', borderRadius: 8, border: 'none', cursor: loading || !pw ? 'not-allowed' : 'pointer', background: loading || !pw ? 'rgba(200,169,110,0.3)' : 'linear-gradient(135deg,#C8A96E,#DCC08A)', color: '#18181E', fontWeight: 700, fontSize: '0.88rem', fontFamily: "'Cinzel',serif", letterSpacing: '0.08em', transition: 'all 0.2s' }}>
+            style={{ padding: '12px', borderRadius: 8, border: 'none', cursor: loading || !pw ? 'not-allowed' : 'pointer', background: loading || !pw ? 'rgba(200,169,110,0.3)' : 'linear-gradient(135deg,#C8A96E,#DCC08A)', color: '#18181E', fontWeight: 700, fontSize: '0.88rem', fontFamily: "'Raleway',sans-serif", letterSpacing: '0.04em', transition: 'all 0.2s' }}>
             {loading ? 'Yoxlanılır...' : 'Daxil ol'}
           </button>
         </form>
@@ -232,7 +232,7 @@ function ReservationsTab() {
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24, flexWrap: 'wrap', gap: 12 }}>
-        <h2 style={{ fontFamily: "'Cinzel',serif", fontSize: '1.1rem', color: '#C8A96E' }}>Rezervasiyalar</h2>
+        <h2 style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 700, fontSize: '1.1rem', color: '#C8A96E' }}>Rezervasiyalar</h2>
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', alignItems: 'center' }}>
           <input type="date" value={filterDate} onChange={e => setFilterDate(e.target.value)}
             style={{ padding: '8px 12px', borderRadius: 7, border: '1px solid rgba(255,255,255,0.12)', background: 'rgba(255,255,255,0.06)', color: '#F4F4F8', fontSize: '0.85rem', outline: 'none' }} />
@@ -347,7 +347,7 @@ function CustomersTab() {
   }, []);
   return (
     <div>
-      <h2 style={{ fontFamily: "'Cinzel',serif", fontSize: '1.1rem', color: '#C8A96E', marginBottom: 24 }}>
+      <h2 style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 700, fontSize: '1.1rem', color: '#C8A96E', marginBottom: 24 }}>
         Müştərilər <span style={{ fontSize: '0.78rem', color: 'rgba(244,244,248,0.35)', fontFamily: "'Raleway',sans-serif" }}>({customers.length})</span>
       </h2>
       {loading ? <div style={{ textAlign: 'center', padding: 40, color: '#C8A96E' }}>Yüklənir...</div>
@@ -405,7 +405,7 @@ function ServicesTab() {
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
-        <h2 style={{ fontFamily: "'Cinzel',serif", fontSize: '1.1rem', color: '#C8A96E' }}>Xidmətlər</h2>
+        <h2 style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 700, fontSize: '1.1rem', color: '#C8A96E' }}>Xidmətlər</h2>
         <BtnA onClick={openAdd} size="sm"><Plus size={14} /> Yeni xidmət</BtnA>
       </div>
       {loading ? <div style={{ textAlign: 'center', padding: 40, color: '#C8A96E' }}>Yüklənir...</div> : (
@@ -415,7 +415,7 @@ function ServicesTab() {
               style={{ ...cardA, padding: '22px 24px' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 10 }}>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontFamily: "'Cinzel',serif", fontSize: '0.95rem', color: '#F4F4F8', marginBottom: 6 }}>{s.name}</div>
+                  <div style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 600, fontSize: '0.95rem', color: '#F4F4F8', marginBottom: 6 }}>{s.name}</div>
                   <div style={{ color: 'rgba(244,244,248,0.45)', fontSize: '0.82rem', lineHeight: 1.5, marginBottom: 12 }}>{s.description}</div>
                   <div style={{ display: 'flex', gap: 16 }}>
                     <span style={{ color: '#C8A96E', fontWeight: 700, fontSize: '1.1rem' }}>{s.price}₼</span>
@@ -492,7 +492,7 @@ function BlogTab() {
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
-        <h2 style={{ fontFamily: "'Cinzel',serif", fontSize: '1.1rem', color: '#C8A96E' }}>Blog Postlar</h2>
+        <h2 style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 700, fontSize: '1.1rem', color: '#C8A96E' }}>Blog Postlar</h2>
         <BtnA onClick={openAdd} size="sm"><Plus size={14} /> Yeni post</BtnA>
       </div>
       {loading ? <div style={{ textAlign: 'center', padding: 40, color: '#C8A96E' }}>Yüklənir...</div>
@@ -503,7 +503,7 @@ function BlogTab() {
               <motion.div key={p.id} initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.04 }}
                 style={{ ...cardA, padding: '18px 22px', display: 'flex', alignItems: 'flex-start', gap: 16 }}>
                 <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontFamily: "'Cinzel',serif", fontSize: '0.92rem', color: '#F4F4F8', marginBottom: 5 }}>{p.title}</div>
+                  <div style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 600, fontSize: '0.92rem', color: '#F4F4F8', marginBottom: 5 }}>{p.title}</div>
                   <div style={{ color: 'rgba(244,244,248,0.4)', fontSize: '0.8rem', lineHeight: 1.5, marginBottom: 6, overflow: 'hidden', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical' }}>{p.excerpt}</div>
                   <div style={{ color: 'rgba(200,169,110,0.5)', fontSize: '0.74rem' }}>{fmtDate(p.createdAt)}</div>
                 </div>
@@ -571,10 +571,10 @@ function SettingsTab({ onLogout }) {
   }
   return (
     <div>
-      <h2 style={{ fontFamily: "'Cinzel',serif", fontSize: '1.1rem', color: '#C8A96E', marginBottom: 28 }}>Tənzimləmə</h2>
+      <h2 style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 700, fontSize: '1.1rem', color: '#C8A96E', marginBottom: 28 }}>Tənzimləmə</h2>
       <div style={{ maxWidth: 440 }}>
         <div style={{ ...cardA, padding: '28px' }}>
-          <h3 style={{ fontFamily: "'Cinzel',serif", fontSize: '0.9rem', color: 'rgba(244,244,248,0.7)', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 8 }}>
+          <h3 style={{ fontFamily: "'Raleway',sans-serif", fontWeight: 700, fontSize: '0.9rem', color: 'rgba(244,244,248,0.7)', marginBottom: 20, display: 'flex', alignItems: 'center', gap: 8 }}>
             <Lock size={15} color="#C8A96E" /> Şifrə dəyişikliyi
           </h3>
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>

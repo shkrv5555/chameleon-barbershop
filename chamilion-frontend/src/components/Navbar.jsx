@@ -108,7 +108,8 @@ export default function Navbar() {
                 <Link
                   to={l.to}
                   style={{
-                    fontFamily: 'Cinzel, serif',
+                    fontFamily: 'Raleway, sans-serif',
+                    fontWeight: 700,
                     fontSize: '0.75rem',
                     letterSpacing: '0.1em',
                     textTransform: 'uppercase',
@@ -169,7 +170,7 @@ export default function Navbar() {
                     to={l.to}
                     style={{
                       display: 'block', padding: '12px 0',
-                      fontFamily: 'Cinzel,serif', fontSize: '0.85rem',
+                      fontFamily: 'Raleway,sans-serif', fontWeight: 700, fontSize: '0.85rem',
                       letterSpacing: '0.1em', textTransform: 'uppercase',
                       color: location.pathname === l.to ? '#C8A96E' : 'rgba(244,244,248,0.85)',
                       textDecoration: 'none',

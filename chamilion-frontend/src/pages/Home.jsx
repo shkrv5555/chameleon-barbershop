@@ -41,9 +41,9 @@ const stats = [
 ];
 
 const services = [
-  { icon: Scissors, name: 'Saç kəsimi',      price: '15₼', desc: 'Klassik kişi kəsimi' },
-  { icon: Scissors, name: 'Saqqal',           price: '10₼', desc: 'Dəqiq dizayn'        },
-  { icon: Award,    name: 'Tam paket',         price: '22₼', desc: 'Saç + saqqal'        },
+  { icon: Scissors, name: 'Saç kəsimi',  desc: 'Klassik kişi kəsimi' },
+  { icon: Scissors, name: 'Saqqal',      desc: 'Dəqiq dizayn'        },
+  { icon: Award,    name: 'Tam paket',   desc: 'Saç + saqqal'        },
 ];
 
 export default function Home() {
@@ -190,8 +190,8 @@ export default function Home() {
         <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 56, alignItems: 'center' }}>
           <FadeIn direction="left">
             <div>
-              <p style={{ fontFamily: 'Cinzel,serif', fontSize: '0.75rem', color: '#C8A96E', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>Haqqımızda</p>
-              <h2 style={{ fontFamily: 'Cinzel,serif', fontSize: 'clamp(1.6rem,4vw,2.4rem)', color: '#18181E', marginBottom: 20, lineHeight: 1.2 }}>
+              <p style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, fontSize: '0.75rem', color: '#C8A96E', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 12 }}>Haqqımızda</p>
+              <h2 style={{ fontFamily: 'Cormorant Garamond,serif', fontSize: 'clamp(1.6rem,4vw,2.4rem)', fontWeight: 700, color: '#18181E', marginBottom: 20, lineHeight: 1.2 }}>
                 Gəncənin Ən Etibarlı<br />Bərbər Salonu
               </h2>
               <div style={{ width: 50, height: 2, background: 'linear-gradient(90deg,#C8A96E,#DCC08A)', marginBottom: 24, borderRadius: 1 }} />
@@ -213,7 +213,7 @@ export default function Home() {
                 ['Rahat mühit', 'Xoş atmosfer'],
               ].map(([title, desc], i) => (
                 <div key={i} className="card emboss" style={{ padding: '20px 16px', textAlign: 'center' }}>
-                  <div style={{ fontFamily: 'Cinzel,serif', fontSize: '0.78rem', color: '#C8A96E', marginBottom: 6, letterSpacing: '0.06em' }}>{title}</div>
+                  <div style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, fontSize: '0.78rem', color: '#C8A96E', marginBottom: 6, letterSpacing: '0.06em' }}>{title}</div>
                   <div style={{ fontSize: '0.78rem', color: '#6A6B75' }}>{desc}</div>
                 </div>
               ))}
@@ -250,7 +250,7 @@ export default function Home() {
                     border: '1px solid rgba(200,169,110,0.2)',
                   }} />
                 </div>
-                <h3 style={{ fontFamily: 'Cinzel,serif', fontSize: '1.4rem', color: '#F4F4F8', marginBottom: 6, letterSpacing: '0.04em' }}>
+                <h3 style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, fontSize: '1.4rem', color: '#F4F4F8', marginBottom: 6, letterSpacing: '0.04em' }}>
                   Azər Quliyev
                 </h3>
                 <p style={{ fontFamily: 'Cormorant Garamond,serif', fontStyle: 'italic', color: '#C8A96E', fontSize: '1rem', marginBottom: 18, letterSpacing: '0.1em' }}>
@@ -298,9 +298,8 @@ export default function Home() {
                   }}>
                     <s.icon size={24} color="#C8A96E" />
                   </div>
-                  <div style={{ fontFamily: 'Cinzel,serif', fontSize: '1rem', color: '#18181E', marginBottom: 8 }}>{s.name}</div>
-                  <div style={{ color: '#6A6B75', fontSize: '0.85rem', marginBottom: 14 }}>{s.desc}</div>
-                  <div style={{ fontFamily: 'Cinzel,serif', fontSize: '1.3rem', color: '#C8A96E', fontWeight: 600 }}>{s.price}</div>
+                  <div style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, fontSize: '1rem', color: '#18181E', marginBottom: 8 }}>{s.name}</div>
+                  <div style={{ color: '#6A6B75', fontSize: '0.85rem' }}>{s.desc}</div>
                 </div>
               </FadeIn>
             ))}
@@ -318,7 +317,7 @@ export default function Home() {
             <p style={{ fontFamily: 'Cormorant Garamond,serif', fontStyle: 'italic', color: '#C8A96E', fontSize: '1.1rem', marginBottom: 12 }}>
               Yaxşı görünüş, böyük inam
             </p>
-            <h2 style={{ fontFamily: 'Cinzel,serif', color: '#F4F4F8', fontSize: 'clamp(1.6rem,4vw,2.2rem)', marginBottom: 20 }}>
+            <h2 style={{ fontFamily: 'Cormorant Garamond,serif', fontWeight: 700, color: '#F4F4F8', fontSize: 'clamp(1.6rem,4vw,2.2rem)', marginBottom: 20 }}>
               Bu gün rezervasiya et
             </h2>
             <p style={{ color: 'rgba(244,244,248,0.6)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: 32 }}>

@@ -19,7 +19,7 @@ export default function BlogPost() {
 
   if (loading) return (
     <PageTransition>
-      <div style={{ paddingTop: 120, textAlign: 'center', color: '#C8A96E', fontFamily: 'Cinzel,serif' }}>Yüklənir...</div>
+      <div style={{ paddingTop: 120, textAlign: 'center', color: '#C8A96E', fontFamily: 'Raleway,sans-serif', fontWeight: 600 }}>Yüklənir...</div>
     </PageTransition>
   );
 
@@ -42,7 +42,7 @@ export default function BlogPost() {
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, color: 'rgba(244,244,248,0.5)', fontSize: '0.8rem', marginBottom: 16 }}>
               <Calendar size={13} /> {date}
             </div>
-            <h1 style={{ fontFamily: 'Cinzel,serif', fontSize: 'clamp(1.4rem,4vw,2.2rem)', color: '#F4F4F8', maxWidth: 700, margin: '0 auto 16px', lineHeight: 1.3 }}>{post.title}</h1>
+            <h1 style={{ fontFamily: 'Cormorant Garamond,serif', fontWeight: 700, fontSize: 'clamp(1.4rem,4vw,2.2rem)', color: '#F4F4F8', maxWidth: 700, margin: '0 auto 16px', lineHeight: 1.3 }}>{post.title}</h1>
             <div style={{ width: 50, height: 2, background: 'linear-gradient(90deg,#C8A96E,#DCC08A)', margin: '0 auto', borderRadius: 1 }} />
           </motion.div>
         </div>

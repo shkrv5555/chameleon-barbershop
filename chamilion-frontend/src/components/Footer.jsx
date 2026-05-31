@@ -53,7 +53,7 @@ export default function Footer() {
 
         {/* Links */}
         <div>
-          <h4 style={{ fontFamily: 'Cinzel,serif', color: '#C8A96E', fontSize: '0.8rem', letterSpacing: '0.12em', marginBottom: 20, textTransform: 'uppercase' }}>Keçidlər</h4>
+          <h4 style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, color: '#C8A96E', fontSize: '0.8rem', letterSpacing: '0.12em', marginBottom: 20, textTransform: 'uppercase' }}>Keçidlər</h4>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
             {[['/', 'Ana Səhifə'], ['/xidmetler', 'Xidmətlər'], ['/blog', 'Blog'], ['/rezervasiya', 'Rezervasiya']].map(([to, label]) => (
               <li key={to}>
@@ -70,7 +70,7 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h4 style={{ fontFamily: 'Cinzel,serif', color: '#C8A96E', fontSize: '0.8rem', letterSpacing: '0.12em', marginBottom: 20, textTransform: 'uppercase' }}>Əlaqə</h4>
+          <h4 style={{ fontFamily: 'Raleway,sans-serif', fontWeight: 700, color: '#C8A96E', fontSize: '0.8rem', letterSpacing: '0.12em', marginBottom: 20, textTransform: 'uppercase' }}>Əlaqə</h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {[
               [Phone,     '+994 XX XXX XX XX'         ],
