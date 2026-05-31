@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: chameleon-barbershop
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install --prefix chamilion-backend && npm install --prefix chamilion-frontend && npm run build --prefix chamilion-frontend
+    startCommand: node chamilion-backend/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        sync: false
+      - key: ADMIN_DEFAULT_PASSWORD
+        sync: false
