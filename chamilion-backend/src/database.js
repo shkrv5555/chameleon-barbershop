@@ -2,10 +2,14 @@ import { Low } from 'lowdb';
 import { JSONFile } from 'lowdb/node';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { mkdirSync } from 'fs';
 import bcrypt from 'bcrypt';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '..', 'data');
+
+// Render və digər cloud platformalarda data/ qovluğu olmaya bilər — yarat
+mkdirSync(DATA_DIR, { recursive: true });
 
 function createDb(filename) {
   const adapter = new JSONFile(join(DATA_DIR, filename));
